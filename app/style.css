@@ -1,0 +1,305 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1%;
+	background-image: url(./assets/HxHWikia.jpg);
+	background-size: cover;
+}
+
+.landingModal {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	background-color: black;
+	color: white;	
+	font-family: 'Rock Salt', cursive;
+	text-align: center;
+}
+
+.title {
+	font-size: 100px;
+	text-align: center;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.instructions {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 25px;
+}
+
+.winnerScreen {
+	z-index: -1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	background-color: black;
+	color: white;	
+}
+
+.winner {
+	font-size: 50px;
+	text-align: center;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Rock Salt', cursive;
+}
+
+.playAgain {
+	font-family: 'Rock Salt', cursive;
+	background-color: black;
+  	border: 1px solid white;
+  	color: white;
+  	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 25px;
+}
+
+.gameBoard{
+	width: 650px;
+	height: 350px;
+	background-image: url(./assets/testbg.png);
+	background-size: 650px 350px;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid black;
+}
+
+.player1{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 150px;
+	left: 0;
+	background-image: url(./assets/gon.png);
+	background-size: 50px 50px;
+}
+
+.player2{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 150px;
+	left: 600px;
+	background-image: url(./assets/killua.png);
+	background-size: 50px 50px;
+}
+
+.obstacles {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-image: url(./assets/obstacle.png);
+	background-size: 50px 50px;
+}
+
+#obstacle1 {
+	top: 150px;
+	left: 200px;
+}
+
+#obstacle2 {
+	top: 150px;
+	left: 400px;
+}
+
+.player1WithRock {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-image: url(./assets/player1WithRock.png);
+	background-size: 50px 50px;
+}
+
+.player2WithRock {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-image: url(./assets/player2WithRock.png);
+	background-size: 50px 50px;
+}
+
+.rock {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	background-image: url(./assets/rock.png);
+	background-size: 50px 50px;
+}
+
+.player1WithPaper {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-image: url(./assets/player1WithPaper.png);
+	background-size: 50px 50px;
+}
+
+.player2WithPaper {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-image: url(./assets/player2WithPaper.png);
+	background-size: 50px 50px;
+}
+
+.paper {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 150px;
+	left: 300px;
+	background-image: url(./assets/paper.png);
+	background-size: 50px 50px;
+}
+
+.player1WithScissor {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-image: url(./assets/player1WithScissor.png);
+	background-size: 50px 50px;
+}
+
+.player2WithScissor {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-image: url(./assets/player2WithScissor.png);
+	background-size: 50px 50px;
+}
+
+.scissor {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 250px;
+	left: 300px;
+	background-image: url(./assets/scissor.png);
+	background-size: 50px 50px;
+}
+
+@media only screen and (min-width: 975px) {
+	.gameBoard{
+		width: 975px;
+		height: 525px;
+		background-size: 975px 525px;
+	}
+
+	.player1{
+		width: 75px;
+		height: 75px;
+		top: 225px;
+		background-size: 75px 75px;
+	}
+
+	.player2{
+		width: 75px;
+		height: 75px;
+		top: 225px;
+		left: 900px;
+		background-size: 75px 75px;
+	}
+
+	.obstacles {
+		width: 75px;
+		height: 75px;
+		background-size: 75px 75px;
+	}
+
+	#obstacle1 {
+		top: 225px;
+		left: 300px;
+	}
+
+	#obstacle2 {
+		top: 225px;
+		left: 600px;
+	}
+
+	.player1WithRock {
+		width: 75px;
+		height: 75px;
+		background-size: 75px 75px;
+	}
+
+	.player2WithRock {
+		width: 75px;
+		height: 75px;
+		background-size: 75px 75px;
+	}
+
+	.rock {
+		width: 75px;
+		height: 75px;
+		top: 75px;
+		left: 450px;
+		background-size: 75px 75px;
+	}
+
+	.player1WithPaper {
+		width: 75px;
+		height: 75px;
+		background-size: 75px 75px;
+	}
+
+	.player2WithPaper {
+		width: 75px;
+		height: 75px;
+		background-size: 75px 75px;
+	}
+
+	.paper {
+		width: 75px;
+		height: 75px;
+		top: 225px;
+		left: 450px;
+		background-size: 75px 75px;
+	}
+
+	.player1WithScissor {
+		width: 75px;
+		height: 75px;
+		background-size: 75px 75px;
+	}
+
+	.player2WithScissor {
+		width: 75px;
+		height: 75px;
+		background-size: 75px 75px;
+	}
+
+	.scissor {
+		width: 75px;
+		height: 75px;
+		top: 375px;
+		left: 450px;
+		background-size: 75px 75px;
+	}
+}
