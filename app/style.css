@@ -89,32 +89,29 @@ body {
 	border: 1px solid black;
 }
 
-.player1{
+.singleGrid{
 	width: 50px;
 	height: 50px;
+	background-size: 50px 50px;
+}
+
+.player1{
 	position: absolute;
 	top: 150px;
 	left: 0;
 	background-image: url(./assets/gon.png);
-	background-size: 50px 50px;
 }
 
 .player2{
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	top: 150px;
 	left: 600px;
 	background-image: url(./assets/killua.png);
-	background-size: 50px 50px;
 }
 
 .obstacles {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	background-image: url(./assets/obstacle.png);
-	background-size: 50px 50px;
 }
 
 #obstacle1 {
@@ -128,81 +125,54 @@ body {
 }
 
 .player1WithRock {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	background-image: url(./assets/player1WithRock.png);
-	background-size: 50px 50px;
 }
 
 .player2WithRock {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	background-image: url(./assets/player2WithRock.png);
-	background-size: 50px 50px;
 }
 
 .rock {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	top: 50px;
 	left: 300px;
 	background-image: url(./assets/rock.png);
-	background-size: 50px 50px;
 }
 
 .player1WithPaper {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	background-image: url(./assets/player1WithPaper.png);
-	background-size: 50px 50px;
 }
 
 .player2WithPaper {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	background-image: url(./assets/player2WithPaper.png);
-	background-size: 50px 50px;
 }
 
 .paper {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	top: 150px;
 	left: 300px;
 	background-image: url(./assets/paper.png);
-	background-size: 50px 50px;
 }
 
 .player1WithScissor {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	background-image: url(./assets/player1WithScissor.png);
-	background-size: 50px 50px;
 }
 
 .player2WithScissor {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	background-image: url(./assets/player2WithScissor.png);
-	background-size: 50px 50px;
 }
 
 .scissor {
-	width: 50px;
-	height: 50px;
 	position: absolute;
 	top: 250px;
 	left: 300px;
 	background-image: url(./assets/scissor.png);
-	background-size: 50px 50px;
 }
 
 @media only screen and (min-width: 975px) {
