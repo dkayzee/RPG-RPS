@@ -212,25 +212,19 @@ body {
 		background-size: 975px 525px;
 	}
 
-	.player1{
+	.singleGrid {
 		width: 75px;
 		height: 75px;
-		top: 225px;
 		background-size: 75px 75px;
+	}
+
+	.player1{
+		top: 225px;
 	}
 
 	.player2{
-		width: 75px;
-		height: 75px;
 		top: 225px;
 		left: 900px;
-		background-size: 75px 75px;
-	}
-
-	.obstacles {
-		width: 75px;
-		height: 75px;
-		background-size: 75px 75px;
 	}
 
 	#obstacle1 {
@@ -243,63 +237,18 @@ body {
 		left: 600px;
 	}
 
-	.player1WithRock {
-		width: 75px;
-		height: 75px;
-		background-size: 75px 75px;
-	}
-
-	.player2WithRock {
-		width: 75px;
-		height: 75px;
-		background-size: 75px 75px;
-	}
-
 	.rock {
-		width: 75px;
-		height: 75px;
 		top: 75px;
 		left: 450px;
-		background-size: 75px 75px;
-	}
-
-	.player1WithPaper {
-		width: 75px;
-		height: 75px;
-		background-size: 75px 75px;
-	}
-
-	.player2WithPaper {
-		width: 75px;
-		height: 75px;
-		background-size: 75px 75px;
 	}
 
 	.paper {
-		width: 75px;
-		height: 75px;
 		top: 225px;
 		left: 450px;
-		background-size: 75px 75px;
-	}
-
-	.player1WithScissor {
-		width: 75px;
-		height: 75px;
-		background-size: 75px 75px;
-	}
-
-	.player2WithScissor {
-		width: 75px;
-		height: 75px;
-		background-size: 75px 75px;
 	}
 
 	.scissor {
-		width: 75px;
-		height: 75px;
 		top: 375px;
 		left: 450px;
-		background-size: 75px 75px;
 	}
 }

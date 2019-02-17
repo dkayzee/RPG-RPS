@@ -117,7 +117,7 @@ function player1Weapon(x, y){
   else if (doesPlayer1HaveWeapon()){
     // swaps scissor with rock only if he has scissor
    if (rock.x === x && rock.y === y) {
-      if (player1ClassList[1] === 'player1WithScissor'){
+      if (player1ClassList[2] === 'player1WithScissor'){
         $player1.classList.remove('player1WithScissor');
         $player1.classList.add('player1WithRock');
         $rock.remove();
@@ -129,7 +129,7 @@ function player1Weapon(x, y){
         scissor.y = 5;
       }
 
-      else if (player1ClassList[1] === 'player1WithPaper'){
+      else if (player1ClassList[2] === 'player1WithPaper'){
         $player1.classList.remove('player1WithPaper');
         $player1.classList.add('player1WithRock');
         $rock.remove();
@@ -142,7 +142,7 @@ function player1Weapon(x, y){
       }
     }
     else if (paper.x === x && paper.y === y) {
-      if (player1ClassList[1] === 'player1WithScissor'){
+      if (player1ClassList[2] === 'player1WithScissor'){
         $player1.classList.remove('player1WithScissor');
         $player1.classList.add('player1WithPaper');
         $paper.remove();
@@ -153,7 +153,7 @@ function player1Weapon(x, y){
         scissor.x = 6;
         scissor.y = 5;
       }
-      else if (player1ClassList[1] === 'player1WithRock'){
+      else if (player1ClassList[2] === 'player1WithRock'){
         $player1.classList.remove('player1WithRock');
         $player1.classList.add('player1WithPaper');
         $paper.remove();
@@ -166,7 +166,7 @@ function player1Weapon(x, y){
       }
     }
     else if (scissor.x === x && scissor.y === y) {
-      if (player1ClassList[1] === 'player1WithRock'){
+      if (player1ClassList[2] === 'player1WithRock'){
         $player1.classList.remove('player1WithRock');
         $player1.classList.add('player1WithScissor');
         $scissor.remove();
@@ -177,7 +177,7 @@ function player1Weapon(x, y){
         scissor.x = -6;
         scissor.y = -5;
       }
-      else if (player1ClassList[1] === 'player1WithPaper'){
+      else if (player1ClassList[2] === 'player1WithPaper'){
         $player1.classList.remove('player1WithPaper');
         $player1.classList.add('player1WithScissor');
         $scissor.remove();
@@ -222,7 +222,7 @@ function player2Weapon(x, y){
     //when player 2 reaches the rocks according
    if (rock.x === x && rock.y === y) {
       //if player 2 has scissors, it will be replaced with rock
-      if (player2ClassList[1] === 'player2WithScissor'){
+      if (player2ClassList[2] === 'player2WithScissor'){
         $player2.classList.remove('player2WithScissor');
         $player2.classList.add('player2WithRock');
         $rock.remove();
@@ -233,7 +233,7 @@ function player2Weapon(x, y){
         scissor.x = 6;
         scissor.y = 5;
       }
-      else if (player2ClassList[1] === 'player2WithPaper'){
+      else if (player2ClassList[2] === 'player2WithPaper'){
         $player2.classList.remove('player2WithPaper');
         $player2.classList.add('player2WithRock');
         $rock.remove();
@@ -246,7 +246,7 @@ function player2Weapon(x, y){
       }
     }
     else if (paper.x === x && paper.y === y) {
-      if (player2ClassList[1] === 'player2WithScissor'){
+      if (player2ClassList[2] === 'player2WithScissor'){
         $player2.classList.remove('player2WithScissor');
         $player2.classList.add('player2WithPaper');
         $paper.remove();
@@ -257,7 +257,7 @@ function player2Weapon(x, y){
         scissor.x = 6;
         scissor.y = 5;
       }
-      else if (player2ClassList[1] === 'player2WithRock'){
+      else if (player2ClassList[2] === 'player2WithRock'){
         console.log('iwork ')
         $player2.classList.remove('player2WithRock');
         $player2.classList.add('player2WithPaper');
@@ -271,7 +271,7 @@ function player2Weapon(x, y){
       }
     }
     else if (scissor.x === x && scissor.y === y) {
-      if (player2ClassList[1] === 'player2WithRock'){
+      if (player2ClassList[2] === 'player2WithRock'){
         $player2.classList.remove('player2WithRock');
         $player2.classList.add('player2WithScissor');
         $scissor.remove();
@@ -282,7 +282,7 @@ function player2Weapon(x, y){
         scissor.x = -6;
         scissor.y = -5;
       }
-      else if (player2ClassList[1] === 'player2WithPaper'){
+      else if (player2ClassList[2] === 'player2WithPaper'){
         $player2.classList.remove('player2WithPaper');
         $player2.classList.add('player2WithScissor');
         $scissor.remove();
